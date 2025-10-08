@@ -19,7 +19,7 @@ export const PeoplePage = () => {
         setLoading(false);
       })
       .catch(err => {
-        setError(err);
+        setError(err?.message ?? String(err));
         setLoading(false);
       });
   }, []);

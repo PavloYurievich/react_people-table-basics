@@ -11,6 +11,7 @@ export const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <NavLink
+            end
             className={({ isActive }) =>
               isActive
                 ? 'navbar-item has-background-grey-lighter'
