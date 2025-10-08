@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { Person } from '../../types';
 
 type Props = {
-  person: Person | null;
-  name: string;
+  person?: Person | null;
+  name?: string;
 };
 
 export const PersonLink = ({ person, name }: Props) => {
